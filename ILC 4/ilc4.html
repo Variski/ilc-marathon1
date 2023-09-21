@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ILC</title>
+  </head>
+  <body>
+    <h2>Halaman Register</h2>
+    <form action="proses.php" method="POST" enctype="multipart/form-data">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <label for="foto">Foto Profil:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" /><br /><br />
+
+      <label for="tanggal_lahir">Tanggal Lahir:</label>
+      <input
+        type="date"
+        id="tanggal_lahir"
+        name="tanggal_lahir"
+        required
+      /><br /><br />
+
+      <label for="gender">Gender:</label>
+      <select name="gender">
+        <option value="laki-laki">Laki-Laki</option>
+        <option value="perempuan">Perempuan</option></select
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
